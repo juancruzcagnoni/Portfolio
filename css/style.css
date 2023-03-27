@@ -337,6 +337,9 @@ h2 {
       -ms-flex-direction: column;
           flex-direction: column;
   text-align: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media (min-width: 768px) {
