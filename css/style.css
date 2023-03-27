@@ -110,15 +110,23 @@ h1 {
   color: #ffffff;
 }
 
+.home-link a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
 .home-link:hover {
   color: #ffffff;
 }
 
+.links {
+  width: 70%;
+  margin: auto;
+}
+
 .social {
   background-color: transparent;
-  border: #BA2323 1px solid;
-  font-size: 12px;
-  padding: 7px 24px;
+  font-size: 20px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -128,6 +136,10 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  color: #BA2323;
+}
+
+.social a {
   color: #BA2323;
 }
 
@@ -345,6 +357,10 @@ h2 {
     -webkit-box-direction: normal;
         -ms-flex-direction: row;
             flex-direction: row;
+  }
+  .links {
+    width: auto;
+    margin: 0;
   }
   .skills {
     padding-top: 3rem;

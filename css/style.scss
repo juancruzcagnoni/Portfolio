@@ -112,21 +112,33 @@ h1{
     border-radius: 30px;
     background-color: $color-2;
     color: $color-3;
+
+    a{
+        text-decoration: none;
+        color: $color-3;
+    }
 }
 
 .home-link:hover{
     color: $color-3;
 }
 
+.links{
+    width: 70%;
+    margin: auto;
+}
+
 .social{
     background-color: transparent;
-    border: $color-2 1px solid;
-    font-size: 12px;
-    padding: 7px 24px;
+    font-size: 20px;
     display: flex;
     justify-content: center;
     align-items: center;
     color: $color-2;
+
+    a{
+        color: $color-2;
+    }
 }
 
 .social:hover{
@@ -328,6 +340,11 @@ h2{
     .social{
         display: flex;
         flex-direction: row;
+    }
+
+    .links{
+        width: auto;
+        margin: 0;
     }
 
     .skills{
