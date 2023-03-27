@@ -88,70 +88,51 @@ h1 {
 }
 
 .home-contact {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
   text-align: center;
   margin-top: 100px;
+  margin-bottom: 50px;
 }
 
-.home-contact a {
-  color: #ffffff;
+.home-link {
   text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
   padding: 14px 48px;
   border-radius: 30px;
-  font-size: 14px;
-}
-
-.home-contact .contact-me {
   background-color: #BA2323;
-  font-weight: 600;
+  color: #ffffff;
 }
 
-.home-contact .contact-me:hover {
-  padding: 14px 60px;
-  -webkit-transition: all 0.5s 0s ease;
-  transition: all 0.5s 0s ease;
+.home-link:hover {
+  color: #ffffff;
 }
 
 .social {
+  background-color: transparent;
+  border: #BA2323 1px solid;
+  font-size: 12px;
+  padding: 7px 24px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-top: 40px;
-}
-
-.social i {
-  font-size: 20px;
-  color: #BA2323;
-}
-
-.social a {
-  padding: 0;
-}
-
-.icon-container {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  background-color: #ffffff;
-  padding: 0.8rem;
-  width: 45px;
-  height: 45px;
-  border-radius: 120px;
+  color: #BA2323;
 }
 
-.icon-container:hover i {
-  -webkit-transform: translateY(-5px);
-          transform: translateY(-5px);
-  -webkit-transition: all 0.5s 0s ease;
-  transition: all 0.5s 0s ease;
+.social:hover {
+  color: #BA2323;
 }
 
 .img-main {
@@ -216,6 +197,11 @@ h2 {
   background-color: #BA2323;
 }
 
+#portfolio .card-container a {
+  text-decoration: none;
+  color: #181818;
+}
+
 .works {
   text-align: center;
   margin-bottom: 2rem;
@@ -228,6 +214,11 @@ h2 {
 
 .works p {
   color: #ffffff;
+}
+
+.works .card-container a {
+  text-decoration: none;
+  color: #181818;
 }
 
 .card-proyecto {
@@ -280,12 +271,12 @@ h2 {
 .titulo-proyecto h3 {
   font-size: 18px;
   font-weight: 600;
-  color: #ffffff;
+  color: #181818;
 }
 
 .titulo-proyecto p {
   font-size: 14px;
-  color: #cbcbcb;
+  color: #181818;
   line-height: 18px;
 }
 
@@ -317,10 +308,6 @@ h2 {
           justify-content: space-between;
 }
 
-.contact-card p {
-  font-size: 14px;
-}
-
 .contact-card a {
   text-decoration: none;
   color: #181818;
@@ -344,15 +331,20 @@ h2 {
 
 @media (min-width: 768px) {
   .home-contact {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
     text-align: left;
   }
-  .home-contact .social {
-    -webkit-box-pack: left;
-        -ms-flex-pack: left;
-            justify-content: left;
-  }
-  .home-contact .social a {
-    margin-right: 1rem;
+  .social {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
   }
   .skills {
     padding-top: 3rem;

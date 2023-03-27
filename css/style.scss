@@ -97,60 +97,40 @@ h1{
 }
 
 .home-contact{
+    display: flex;
+    flex-direction: column;
     text-align: center;
     margin-top: 100px;
+    margin-bottom: 50px;
+}
 
-    a{
-        color: $color-3;
-        text-decoration: none;
-        padding: 14px 48px;
-        border-radius: 30px;
-        font-size: 14px;
-    }
+.home-link{
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 14px 48px;
+    border-radius: 30px;
+    background-color: $color-2;
+    color: $color-3;
+}
 
-    .contact-me{
-        background-color: $color-2;
-        font-weight: 600;
-    }
-
-    .contact-me:hover{
-        padding: 14px 60px;
-        transition: all 0.5s 0s ease;
-    }
+.home-link:hover{
+    color: $color-3;
 }
 
 .social{
+    background-color: transparent;
+    border: $color-2 1px solid;
+    font-size: 12px;
+    padding: 7px 24px;
     display: flex;
     justify-content: center;
-    margin-top: 40px;
-
-    i{
-        font-size: 20px;
-        color: $color-2;
-    }
-
-    a{
-        padding: 0;
-    }
-}
-
-.icon-container{
-    display: flex;
     align-items: center;
-    justify-content: center;
-
-    background-color: $color-3;
-    padding: 0.8rem;
-    width: 45px;
-    height: 45px;
-    border-radius: 120px;
+    color: $color-2;
 }
 
-.icon-container:hover{
-    i{
-        transform: translateY(-5px);
-        transition: all 0.5s 0s ease;
-    }
+.social:hover{
+    color: $color-2;
 }
 
 .img-main{
@@ -215,6 +195,15 @@ h2{
     background-color: $color-2;
 }
 
+#portfolio{
+    .card-container{
+        a{
+            text-decoration: none;
+            color: $color-1;
+        }
+    }
+}
+
 .works{
     text-align: center;
     margin-bottom: 2rem;
@@ -226,6 +215,13 @@ h2{
 
     p{
         color: $color-3;
+    }
+
+    .card-container{
+        a{
+            text-decoration: none;
+            color: $color-1;
+        }
     }
 }
 
@@ -274,12 +270,12 @@ h2{
     h3{
         font-size: 18px;
         font-weight: 600;
-        color: $color-3;
+        color: $color-1;
     }
 
     p{
         font-size: 14px;
-        color: #cbcbcb;
+        color: $color-1;
         line-height: 18px;
     }
 }
@@ -305,10 +301,6 @@ h2{
     flex-direction: column;
     justify-content: space-between;
 
-    p{
-        font-size: 14px;
-    }
-
     a{
         text-decoration: none;
         color: $color-1;
@@ -329,15 +321,13 @@ h2{
 // MediaQuery
 @media (min-width: 768px) {
     .home-contact{
+        flex-direction: row;
         text-align: left;
+    }
 
-        .social{
-            justify-content: left;
-            
-            a{
-                margin-right: 1rem;
-            }
-        }
+    .social{
+        display: flex;
+        flex-direction: row;
     }
 
     .skills{
