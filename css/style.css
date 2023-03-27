@@ -1,0 +1,379 @@
+@font-face {
+  font-family: 'Neue Montreal';
+  src: url(../fonts/NeueMontreal-Regular.otf);
+}
+
+@font-face {
+  font-family: 'Porlane';
+  src: url(../fonts/Porlane.otf);
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'Neue Montreal', sans-serif;
+}
+
+.container {
+  width: 92%;
+}
+
+.navbar {
+  background-color: #ffffff;
+}
+
+.navbar-toggler {
+  border: transparent;
+}
+
+.navbar-toggler:focus {
+  -webkit-box-shadow: none;
+          box-shadow: none;
+}
+
+.navbar-toggler-icon {
+  background-image: url(../img/menu.svg);
+  height: 20px;
+  width: 20px;
+}
+
+.nav-link {
+  font-size: 14px;
+  color: #181818;
+}
+
+.nav-link:hover {
+  color: #181818;
+}
+
+.navbar-nav {
+  text-align: center;
+}
+
+.card-container {
+  padding: 1rem;
+}
+
+.card {
+  border-radius: 24px;
+  padding: 2rem;
+  border-color: transparent;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+}
+
+.home {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  background-color: #ffffff;
+}
+
+h1 {
+  font-family: 'Porlane', sans-serif;
+  font-size: 7rem;
+  color: #181818;
+  line-height: 5.5rem;
+}
+
+.home-info p {
+  margin-top: 35px;
+}
+
+.home-image {
+  background-image: url(../img/image-main-2.jpg);
+  background-position: center;
+  background-size: auto;
+}
+
+.home-contact {
+  text-align: center;
+  margin-top: 100px;
+}
+
+.home-contact a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 14px 48px;
+  border-radius: 30px;
+  font-size: 14px;
+}
+
+.home-contact .contact-me {
+  background-color: #BA2323;
+  font-weight: 600;
+}
+
+.home-contact .contact-me:hover {
+  padding: 14px 60px;
+  -webkit-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+}
+
+.social {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-top: 40px;
+}
+
+.social i {
+  font-size: 20px;
+  color: #BA2323;
+}
+
+.social a {
+  padding: 0;
+}
+
+.icon-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  background-color: #ffffff;
+  padding: 0.8rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 120px;
+}
+
+.icon-container:hover i {
+  -webkit-transform: translateY(-5px);
+          transform: translateY(-5px);
+  -webkit-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+}
+
+.img-main {
+  background-image: url(../img/image-main-3.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  height: 100%;
+}
+
+.skills {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  background-color: #ffffff;
+}
+
+.skills h2 {
+  text-align: center;
+}
+
+h2 {
+  font-family: 'Porlane';
+  font-size: 6rem;
+  color: #BA2323;
+  margin-bottom: 3rem;
+  line-height: 5rem;
+}
+
+.habilities {
+  text-align: center;
+}
+
+.habilities p {
+  font-weight: 500;
+  font-size: 20px;
+  color: #181818;
+  cursor: pointer;
+}
+
+.habilities p:hover {
+  color: #BA2323;
+  -webkit-transform: translateX(20px);
+          transform: translateX(20px);
+  -webkit-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+}
+
+.habilities span {
+  color: #b4b4b4;
+  font-size: 12px;
+  margin-right: 1rem;
+}
+
+.about {
+  padding: 4rem 0;
+  background-color: #ffffff;
+  text-align: center;
+}
+
+.portfolio {
+  padding: 5rem 0;
+  background-color: #BA2323;
+}
+
+.works {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+
+.works h2 {
+  margin-bottom: 1rem;
+  color: #ffffff;
+}
+
+.works p {
+  color: #ffffff;
+}
+
+.card-proyecto {
+  height: 20rem;
+  position: relative;
+  background-image: url(../img/project.jpg);
+  background-position: center;
+  background-size: cover;
+}
+
+.card-proyecto .flecha {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  padding: 0.8rem;
+  width: 45px;
+  height: 45px;
+  border-radius: 120px;
+  background-color: #ffff;
+  position: absolute;
+  top: 22px;
+  right: 25px;
+}
+
+.card-proyecto .flecha i {
+  font-size: 0.9rem;
+}
+
+.card-proyecto:hover .flecha {
+  top: 14px;
+  right: 17px;
+  -webkit-transition: all 0.5s 0s ease;
+  transition: all 0.5s 0s ease;
+}
+
+.p1 {
+  background-image: url(../img/project.jpg);
+}
+
+.titulo-proyecto {
+  width: 85%;
+}
+
+.titulo-proyecto h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.titulo-proyecto p {
+  font-size: 14px;
+  color: #cbcbcb;
+  line-height: 18px;
+}
+
+.contacto {
+  height: 100vh;
+  padding: 5rem 0;
+  background-color: #181818;
+}
+
+.contacto h2 {
+  color: #BA2323;
+  margin: 0;
+  line-height: 5rem;
+  margin-bottom: 2rem;
+}
+
+.contact-card {
+  background-color: #ffffff;
+  height: 80vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.contact-card p {
+  font-size: 14px;
+}
+
+.contact-card a {
+  text-decoration: none;
+  color: #181818;
+  font-size: 1.2rem;
+}
+
+.contact-card a:hover {
+  color: #646464;
+}
+
+.contact-top {
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: center;
+}
+
+@media (min-width: 768px) {
+  .home-contact {
+    text-align: left;
+  }
+  .home-contact .social {
+    -webkit-box-pack: left;
+        -ms-flex-pack: left;
+            justify-content: left;
+  }
+  .home-contact .social a {
+    margin-right: 1rem;
+  }
+  .skills {
+    padding-top: 3rem;
+  }
+  .skills h2 {
+    text-align: left;
+  }
+  .habilities {
+    text-align: left;
+  }
+  .works {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
+  .contact-card h2 {
+    font-size: 8rem;
+    line-height: 6.5rem;
+  }
+  .contact-top {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+  }
+}
+/*# sourceMappingURL=style.css.map */
