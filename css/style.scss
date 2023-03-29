@@ -237,11 +237,11 @@ h2{
     }
 }
 
-.card-proyecto{
+.card-project{
     height: 20rem;
     position: relative;
     background-image: url(../img/project.jpg);
-    background-position: center;
+    background-position: center center;
     background-size: cover;
 
     .flecha{
@@ -254,6 +254,7 @@ h2{
         height: 45px;
         border-radius: 120px;
         background-color: #ffff;
+        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
         position: absolute;
         top: 22px;
         right: 25px;
@@ -264,7 +265,7 @@ h2{
     }
 }
 
-.card-proyecto:hover{
+.card-project:hover{
     .flecha{
         top: 14px;
         right: 17px;
@@ -273,10 +274,22 @@ h2{
 }
 
 .p1{
-    background-image: url(../img/project.jpg);
+    background-image: url(../img/project-1.jpg);
 }
 
-.titulo-proyecto{
+.p2{
+    background-image: url(../img/project-2.jpg);
+}
+
+.p3{
+    background-image: url(../img/project-3.jpg);
+}
+
+.p4{
+    background-image: url(../img/project-4.jpg);
+}
+
+.title-project{
     width: 85%;
 
     h3{

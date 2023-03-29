@@ -3,26 +3,30 @@ let portfolio = document.getElementById('portfolio');
 // Projects array. 
 let projects = [
     {
-        name: "Project 1",
+        name: "Smartech ecommerce",
         detail: "Description",
+        image: "p1",
         col: "col-md-7",
         delay: 1700
     },
     {
-        name: "Project 2",
+        name: "Maria brewing",
         detail: "Description",
+        image: "p2",
         col: "col-md-5",
         delay: 1200
     },
     {
-        name: "Project 3",
+        name: "Club Atletico Huracán (SADA)",
         detail: "Description",
+        image: "p3",
         col: "col-md-5",
         delay: 1700
     },  
     {
-        name: "Project 4",
+        name: "Cooming soon",
         detail: "Description",
+        image: "p4",
         col: "col-md-7",
         delay: 1200
     }
@@ -37,8 +41,8 @@ projects.forEach((project) => {
     div.setAttribute('data-aos-duration', project.delay)
     div.innerHTML = `
     <a href="">
-        <div class="card card-proyecto p1">
-            <div class="titulo-proyecto">
+        <div class="card card-project ${project.image}">
+            <div class="title-project">
                 <h3>${project.name}</h3>
                 <p>${project.detail}</p>
             </div>

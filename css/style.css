@@ -233,15 +233,15 @@ h2 {
   color: #181818;
 }
 
-.card-proyecto {
+.card-project {
   height: 20rem;
   position: relative;
   background-image: url(../img/project.jpg);
-  background-position: center;
+  background-position: center center;
   background-size: cover;
 }
 
-.card-proyecto .flecha {
+.card-project .flecha {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -256,16 +256,18 @@ h2 {
   height: 45px;
   border-radius: 120px;
   background-color: #ffff;
+  -webkit-box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -4px rgba(0, 0, 0, 0.1);
   position: absolute;
   top: 22px;
   right: 25px;
 }
 
-.card-proyecto .flecha i {
+.card-project .flecha i {
   font-size: 0.9rem;
 }
 
-.card-proyecto:hover .flecha {
+.card-project:hover .flecha {
   top: 14px;
   right: 17px;
   -webkit-transition: all 0.5s 0s ease;
@@ -273,20 +275,32 @@ h2 {
 }
 
 .p1 {
-  background-image: url(../img/project.jpg);
+  background-image: url(../img/project-1.jpg);
 }
 
-.titulo-proyecto {
+.p2 {
+  background-image: url(../img/project-2.jpg);
+}
+
+.p3 {
+  background-image: url(../img/project-3.jpg);
+}
+
+.p4 {
+  background-image: url(../img/project-4.jpg);
+}
+
+.title-project {
   width: 85%;
 }
 
-.titulo-proyecto h3 {
+.title-project h3 {
   font-size: 18px;
   font-weight: 600;
   color: #181818;
 }
 
-.titulo-proyecto p {
+.title-project p {
   font-size: 14px;
   color: #181818;
   line-height: 18px;
