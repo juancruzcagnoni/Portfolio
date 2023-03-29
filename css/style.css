@@ -1,10 +1,10 @@
 @font-face {
-  font-family: 'Neue Montreal';
+  font-family: "Neue Montreal";
   src: url(../fonts/NeueMontreal-Regular.otf);
 }
 
 @font-face {
-  font-family: 'Porlane';
+  font-family: "Porlane";
   src: url(../fonts/Porlane.otf);
 }
 
@@ -13,7 +13,7 @@
           box-sizing: border-box;
   margin: 0;
   padding: 0;
-  font-family: 'Neue Montreal', sans-serif;
+  font-family: "Neue Montreal", sans-serif;
 }
 
 .container {
@@ -71,7 +71,7 @@
 }
 
 h1 {
-  font-family: 'Porlane', sans-serif;
+  font-family: "Porlane", sans-serif;
   font-size: 7rem;
   color: #181818;
   line-height: 5.5rem;
@@ -82,7 +82,7 @@ h1 {
 }
 
 .home-image {
-  background-image: url(../img/image-main-2.jpg);
+  background-image: url(../img/image-main-1.jpg);
   background-position: center;
   background-size: auto;
 }
@@ -101,12 +101,13 @@ h1 {
 }
 
 .home-link {
+  cursor: pointer;
   text-decoration: none;
   font-size: 14px;
   font-weight: 600;
   padding: 14px 48px;
   border-radius: 30px;
-  background-color: #BA2323;
+  background-color: #ba2323;
   color: #ffffff;
 }
 
@@ -116,7 +117,10 @@ h1 {
 }
 
 .home-link:hover {
+  background-color: #181818;
   color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
 }
 
 .links {
@@ -136,19 +140,19 @@ h1 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  color: #BA2323;
+  color: #ba2323;
 }
 
 .social a {
-  color: #BA2323;
+  color: #ba2323;
 }
 
 .social:hover {
-  color: #BA2323;
+  color: #ba2323;
 }
 
 .img-main {
-  background-image: url(../img/image-main-3.png);
+  background-image: url(../img/image-main-2.png);
   background-position: center;
   background-size: cover;
   min-height: 300px;
@@ -166,9 +170,9 @@ h1 {
 }
 
 h2 {
-  font-family: 'Porlane';
+  font-family: "Porlane";
   font-size: 6rem;
-  color: #BA2323;
+  color: #ba2323;
   margin-bottom: 3rem;
   line-height: 5rem;
 }
@@ -185,7 +189,7 @@ h2 {
 }
 
 .habilities p:hover {
-  color: #BA2323;
+  color: #ba2323;
   -webkit-transform: translateX(20px);
           transform: translateX(20px);
   -webkit-transition: all 0.5s 0s ease;
@@ -206,7 +210,7 @@ h2 {
 
 .portfolio {
   padding: 5rem 0;
-  background-color: #BA2323;
+  background-color: #ba2323;
 }
 
 #portfolio .card-container a {
@@ -295,14 +299,14 @@ h2 {
 }
 
 .title-project h3 {
-  font-size: 18px;
+  font-size: 20px;
   font-weight: 600;
   color: #181818;
 }
 
 .title-project p {
-  font-size: 14px;
-  color: #181818;
+  font-size: 16px;
+  color: #ba2323;
   line-height: 18px;
 }
 
@@ -313,7 +317,7 @@ h2 {
 }
 
 .contacto h2 {
-  color: #BA2323;
+  color: #ba2323;
   margin: 0;
   line-height: 5rem;
   margin-bottom: 2rem;
@@ -353,6 +357,60 @@ h2 {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+.project {
+  padding-top: 1rem;
+  height: 100vh;
+}
+
+.data-project {
+  position: relative;
+}
+
+.data-project h2 {
+  margin: 0;
+}
+
+.data-project a {
+  text-decoration: none;
+}
+
+.links-project {
+  position: unset;
+}
+
+.links-project a {
+  color: #ba2323;
+  padding: 7px 24px;
+  border-radius: 30px;
+  border: #ba2323 1px solid;
+}
+
+.links-project a:hover {
+  background-color: #ba2323;
+  color: #ffffff;
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.back {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: #ba2323;
+  font-weight: 600;
+}
+
+.back:hover {
+  color: #ba2323;
+}
+
+.tools {
+  color: #646464;
 }
 
 @media (min-width: 768px) {

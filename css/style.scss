@@ -1,391 +1,450 @@
-// Colores 
+// Colores
 $color-1: #181818;
-$color-2: #BA2323;
+$color-2: #ba2323;
 $color-3: #ffffff;
 $color-4: #230000;
 
 // Font
 @font-face {
-    font-family: 'Neue Montreal';
-    src: url(../fonts/NeueMontreal-Regular.otf);
+  font-family: "Neue Montreal";
+  src: url(../fonts/NeueMontreal-Regular.otf);
 }
 
 @font-face {
-    font-family: 'Porlane';
-    src: url(../fonts/Porlane.otf);
+  font-family: "Porlane";
+  src: url(../fonts/Porlane.otf);
 }
 
-// Normalize 
-*{
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-    font-family: 'Neue Montreal', sans-serif;
+// Normalize
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: "Neue Montreal", sans-serif;
 }
 
-.container{
-    width: 92%;
+.container {
+  width: 92%;
 }
 
 // Nav
-.navbar{
-    background-color: $color-3;
+.navbar {
+  background-color: $color-3;
 }
 
-.navbar-toggler{
-    border: transparent;
+.navbar-toggler {
+  border: transparent;
 }
 
-.navbar-toggler:focus{
-    box-shadow: none;
+.navbar-toggler:focus {
+  box-shadow: none;
 }
 
-.navbar-toggler-icon{
-    background-image: url(../img/menu.svg);
-    height: 20px;
-    width: 20px;
+.navbar-toggler-icon {
+  background-image: url(../img/menu.svg);
+  height: 20px;
+  width: 20px;
 }
 
-.nav-link{
-    font-size: 14px;
-    color: $color-1;
+.nav-link {
+  font-size: 14px;
+  color: $color-1;
 }
 
-.nav-link:hover{
-    color: $color-1;
+.nav-link:hover {
+  color: $color-1;
 }
 
-.navbar-nav{
-    text-align: center;
+.navbar-nav {
+  text-align: center;
 }
 
 // Home
-.card-container{
-    padding: 1rem;
+.card-container {
+  padding: 1rem;
 }
 
-.card{
-    border-radius: 24px;
-    padding: 2rem;
-    border-color: transparent;
-    box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
+.card {
+  border-radius: 24px;
+  padding: 2rem;
+  border-color: transparent;
+  box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+    0 4px 6px -4px rgba(0, 0, 0, 0.1);
 }
 
-.home{
-    padding-top: 1rem;
-    padding-bottom: 4rem;
-    background-color: $color-3;
+.home {
+  padding-top: 1rem;
+  padding-bottom: 4rem;
+  background-color: $color-3;
 }
 
-h1{
-    font-family: 'Porlane', sans-serif;
-    font-size: 7rem;
-    color: $color-1;
-    line-height: 5.5rem;
+h1 {
+  font-family: "Porlane", sans-serif;
+  font-size: 7rem;
+  color: $color-1;
+  line-height: 5.5rem;
 }
 
-.home-info{
-    p{
-        margin-top: 35px;
-    }
+.home-info {
+  p {
+    margin-top: 35px;
+  }
 }
 
-.home-image{
-    background-image: url(../img/image-main-2.jpg);
-    background-position: center;
-    background-size: auto;
+.home-image {
+  background-image: url(../img/image-main-1.jpg);
+  background-position: center;
+  background-size: auto;
 }
 
-.home-contact{
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-    margin-top: 100px;
-    margin-bottom: 50px;
+.home-contact {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  margin-top: 100px;
+  margin-bottom: 50px;
 }
 
-.home-link{
+.home-link {
+  cursor: pointer;
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 600;
+  padding: 14px 48px;
+  border-radius: 30px;
+  background-color: $color-2;
+  color: $color-3;
+
+  a {
     text-decoration: none;
-    font-size: 14px;
-    font-weight: 600;
-    padding: 14px 48px;
-    border-radius: 30px;
-    background-color: $color-2;
     color: $color-3;
-
-    a{
-        text-decoration: none;
-        color: $color-3;
-    }
+  }
 }
 
-.home-link:hover{
-    color: $color-3;
+.home-link:hover {
+  background-color: $color-1;
+  color: $color-3;
+  transition: 0.3s ease-in-out;
 }
 
-.links{
-    width: 70%;
-    margin: auto;
+.links {
+  width: 70%;
+  margin: auto;
 }
 
-.social{
-    background-color: transparent;
-    font-size: 20px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.social {
+  background-color: transparent;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: $color-2;
+
+  a {
     color: $color-2;
-
-    a{
-        color: $color-2;
-    }
+  }
 }
 
-.social:hover{
-    color: $color-2;
+.social:hover {
+  color: $color-2;
 }
 
-.img-main{
-    background-image: url(../img/image-main-3.png);
-    background-position: center;
-    background-size: cover;
-    min-height: 300px;
-    height: 100%;
+.img-main {
+  background-image: url(../img/image-main-2.png);
+  background-position: center;
+  background-size: cover;
+  min-height: 300px;
+  height: 100%;
 }
 
 // About me
-.skills{
-    padding-top: 1rem;
-    padding-bottom: 5rem;
-    background-color: $color-3;
+.skills {
+  padding-top: 1rem;
+  padding-bottom: 5rem;
+  background-color: $color-3;
 
-    h2{
-        text-align: center;
-    }
+  h2 {
+    text-align: center;
+  }
 }
 
-h2{
-    font-family: 'Porlane';
-    font-size: 6rem;
+h2 {
+  font-family: "Porlane";
+  font-size: 6rem;
+  color: $color-2;
+  margin-bottom: 3rem;
+  line-height: 5rem;
+}
+
+.habilities {
+  text-align: center;
+
+  p {
+    font-weight: 500;
+    font-size: 20px;
+    color: $color-1;
+    cursor: pointer;
+  }
+
+  p:hover {
     color: $color-2;
-    margin-bottom: 3rem;
-    line-height: 5rem;
+    transform: translateX(20px);
+    transition: all 0.5s 0s ease;
+  }
+
+  span {
+    color: #b4b4b4;
+    font-size: 12px;
+    margin-right: 1rem;
+  }
 }
 
-.habilities{
-    text-align: center;
+.about {
+  padding: 4rem 0;
+  background-color: $color-3;
+  text-align: center;
+}
 
-    p{
-        font-weight: 500;
-        font-size: 20px;
-        color: $color-1;
-        cursor: pointer;
+// Portfolio
+.portfolio {
+  padding: 5rem 0;
+  background-color: $color-2;
+}
+
+#portfolio {
+  .card-container {
+    a {
+      text-decoration: none;
+      color: $color-1;
     }
+  }
+}
 
-    p:hover{
-        color: $color-2;
-        transform: translateX(20px);
-        transition: all 0.5s 0s ease;
+.works {
+  text-align: center;
+  margin-bottom: 2rem;
+
+  h2 {
+    margin-bottom: 1rem;
+    color: $color-3;
+  }
+
+  p {
+    color: $color-3;
+  }
+
+  .card-container {
+    a {
+      text-decoration: none;
+      color: $color-1;
     }
+  }
+}
 
-    span{
-        color: #b4b4b4;
-        font-size: 12px;
-        margin-right: 1rem;
+.card-project {
+  height: 20rem;
+  position: relative;
+  background-image: url(../img/project.jpg);
+  background-position: center center;
+  background-size: cover;
+
+  .flecha {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 0.8rem;
+    width: 45px;
+    height: 45px;
+    border-radius: 120px;
+    background-color: #ffff;
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1),
+      0 4px 6px -4px rgba(0, 0, 0, 0.1);
+    position: absolute;
+    top: 22px;
+    right: 25px;
+
+    i {
+      font-size: 0.9rem;
     }
+  }
 }
 
-.about{
-    padding: 4rem 0;
-    background-color: $color-3;
-    text-align: center;
+.card-project:hover {
+  .flecha {
+    top: 14px;
+    right: 17px;
+    transition: all 0.5s 0s ease;
+  }
 }
 
-// Portfolio 
-.portfolio{
-    padding: 5rem 0;
-    background-color: $color-2;
+.p1 {
+  background-image: url(../img/project-1.jpg);
 }
 
-#portfolio{
-    .card-container{
-        a{
-            text-decoration: none;
-            color: $color-1;
-        }
-    }
+.p2 {
+  background-image: url(../img/project-2.jpg);
 }
 
-.works{
-    text-align: center;
-    margin-bottom: 2rem;
-
-    h2{
-        margin-bottom: 1rem;
-        color: $color-3;
-    }
-
-    p{
-        color: $color-3;
-    }
-
-    .card-container{
-        a{
-            text-decoration: none;
-            color: $color-1;
-        }
-    }
+.p3 {
+  background-image: url(../img/project-3.jpg);
 }
 
-.card-project{
-    height: 20rem;
-    position: relative;
-    background-image: url(../img/project.jpg);
-    background-position: center center;
-    background-size: cover;
-
-    .flecha{
-        display: flex;
-        align-items: center;
-        justify-content: center;
-
-        padding: 0.8rem;
-        width: 45px;
-        height: 45px;
-        border-radius: 120px;
-        background-color: #ffff;
-        box-shadow: 0 10px 15px -3px rgba(0,0,0,0.1), 0 4px 6px -4px rgba(0,0,0,0.1);
-        position: absolute;
-        top: 22px;
-        right: 25px;
-
-        i{
-            font-size: 0.9rem;
-        }
-    }
+.p4 {
+  background-image: url(../img/project-4.jpg);
 }
 
-.card-project:hover{
-    .flecha{
-        top: 14px;
-        right: 17px;
-        transition: all 0.5s 0s ease;
-    }
-}
+.title-project {
+  width: 85%;
 
-.p1{
-    background-image: url(../img/project-1.jpg);
-}
+  h3 {
+    font-size: 20px;
+    font-weight: 600;
+    color: $color-1;
+  }
 
-.p2{
-    background-image: url(../img/project-2.jpg);
-}
-
-.p3{
-    background-image: url(../img/project-3.jpg);
-}
-
-.p4{
-    background-image: url(../img/project-4.jpg);
-}
-
-.title-project{
-    width: 85%;
-
-    h3{
-        font-size: 18px;
-        font-weight: 600;
-        color: $color-1;
-    }
-
-    p{
-        font-size: 14px;
-        color: $color-1;
-        line-height: 18px;
-    }
+  p {
+    font-size: 16px;
+    color: $color-2;
+    line-height: 18px;
+  }
 }
 
 // Contact
-.contacto{
-    height: 100vh;
-    padding: 5rem 0;
-    background-color: $color-1;
+.contacto {
+  height: 100vh;
+  padding: 5rem 0;
+  background-color: $color-1;
 
-    h2{
-        color: $color-2;
-        margin: 0;
-        line-height: 5rem;
-        margin-bottom: 2rem;
-    }
+  h2 {
+    color: $color-2;
+    margin: 0;
+    line-height: 5rem;
+    margin-bottom: 2rem;
+  }
 }
 
-.contact-card{
-    background-color: $color-3;
-    height: 80vh;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+.contact-card {
+  background-color: $color-3;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
-    a{
-        text-decoration: none;
-        color: $color-1;
-        font-size: 1.2rem;
-    }
+  a {
+    text-decoration: none;
+    color: $color-1;
+    font-size: 1.2rem;
+  }
 
-    a:hover{
-        color: #646464;
-    }
+  a:hover {
+    color: #646464;
+  }
 }
 
-.contact-top{
-    flex-direction: column;
-    text-align: center;
-    align-items: center;
+.contact-top {
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+
+// Projects
+.project {
+  padding-top: 1rem;
+  height: 100vh;
+}
+
+.data-project {
+  position: relative;
+
+  h2 {
+    margin: 0;
+  }
+
+  a{
+    text-decoration: none;
+  }
+}
+
+.links-project {
+  position: unset;
+
+  a{
+    color: $color-2;
+    padding: 7px 24px;
+    border-radius: 30px;
+    border: $color-2 1px solid;
+  }
+
+  a:hover{
+    background-color: $color-2;
+    color: $color-3;
+    transition: 0.3s ease-in-out;
+  }
+}
+
+.back{
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  color: $color-2;
+  font-weight: 600;
+}
+
+.back:hover{
+  color: $color-2;
+}
+
+.tools {
+  color: #646464;
 }
 
 // MediaQuery
 @media (min-width: 768px) {
-    .home-contact{
-        flex-direction: row;
-        text-align: left;
-    }
+  .home-contact {
+    flex-direction: row;
+    text-align: left;
+  }
 
-    .social{
-        display: flex;
-        flex-direction: row;
-    }
+  .social {
+    display: flex;
+    flex-direction: row;
+  }
 
-    .links{
-        width: auto;
-        margin: 0;
-    }
+  .links {
+    width: auto;
+    margin: 0;
+  }
 
-    .skills{
-        padding-top: 3rem;
+  .skills {
+    padding-top: 3rem;
 
-        h2{
-            text-align: left;
-        }
+    h2 {
+      text-align: left;
     }
+  }
 
-    .habilities{
-        text-align: left;
-    }
+  .habilities {
+    text-align: left;
+  }
 
-    .works{
-        width: 60%;
-        margin: auto;
-        margin-bottom: 5rem;
-    }
+  .works {
+    width: 60%;
+    margin: auto;
+    margin-bottom: 5rem;
+  }
 
-    .contact-card{
-        h2{
-            font-size: 8rem;
-            line-height: 6.5rem;
-        }
+  .contact-card {
+    h2 {
+      font-size: 8rem;
+      line-height: 6.5rem;
     }
+  }
 
-    .contact-top{
-        flex-direction: row;
-    }
+  .contact-top {
+    flex-direction: row;
+  }
 }
